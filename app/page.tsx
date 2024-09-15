@@ -3,6 +3,7 @@
 import AppointmentForm from "../components/AppointmentForm";
 import ServiceList from "@/components/ServiceList";
 import Navbar from "@/components/Navbar";
+import CombinedComponent from "@/components/CombinedComponent";
 
 export default function BookingPage() {
   return (
@@ -10,12 +11,7 @@ export default function BookingPage() {
       <div className="w-full max-w-3xl">
         
         <Navbar />
-        <div id="service-list">
-          <ServiceList />
-        </div>
-        <div id="appointment-form">
-          <AppointmentForm />
-        </div>
+        <CombinedComponent/>
       </div>
     </div>
   );
